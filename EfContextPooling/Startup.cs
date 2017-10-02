@@ -24,7 +24,7 @@ namespace EfContextPooling
             var connection =
                 @"Server=(localdb)\mssqllocaldb;Database=EfLikeOperator.EmployeeContext;Trusted_Connection=True;";
 
-            services.AddDbContext<EmployeeContext>(options =>
+            services.AddDbContextPool<EmployeeContext>(options =>
             {
                 options.UseSqlServer(connection);
             });

@@ -1,0 +1,29 @@
+﻿@page
+@using EfContextPooling.Pages
+@model EfContextPooling.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Like Tibbs%</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var employee in Model.EmployeesLikeTibbs)
+            {
+                    <tr>
+                        <td>@employee.Id</td>
+                        <td>@employee.FirstName @employee.LastName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

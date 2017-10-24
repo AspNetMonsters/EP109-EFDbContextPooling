@@ -1,4 +1,4 @@
-# EP109-EFDbContextPooling
+# ASP.NET Monsters #109: DbContext Pooling in Entity Framework Core 2.0
 Sample code from Episode 109 of the ASP.NET Monsters Weekly
 
 
